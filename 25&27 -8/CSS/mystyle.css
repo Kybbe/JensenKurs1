@@ -1,0 +1,42 @@
+/* CSS Document */
+body {
+	height:100%;
+	margin:0;
+	padding:0; /* Need to set body margin and padding to get consistency between browsers. */
+	font-family: verdana, helvetica, arial, sans-serif; font-size: 12px; color: #3b3b3b;
+}
+
+h1 {
+	color: blue;
+}
+
+p {font-family: verdana, helvetica, arial, sans-serif; font-size: 13px;}
+
+
+.redText{
+	color: red;
+}
+
+.greenText{
+	color: green;
+}
+
+.button {
+	float: right;
+	position: relative;
+	border: 1px solid #003366;
+	padding: 2px;
+	height:28px;
+	visibility: visible;
+	border-radius: 3px;
+	background: #003366;
+   	margin-top: 9px;
+	font-size: 1em;
+	color: white;
+	cursor: pointer;
+}
+
+.button:hover {
+  	background-color: #1abcdc;
+  	border: 1px solid #1abcdc;
+}

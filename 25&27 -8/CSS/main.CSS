@@ -1,0 +1,17 @@
+body {
+    text-align: center;
+}
+
+ul {
+    list-style: inside;
+}
+
+form {
+    margin: 0 auto; 
+    width:350px;
+}
+
+form input[type=text], form textarea {
+    width: 350px;
+    margin-top: 10px;
+}
