@@ -1,2 +1,3 @@
-# FinalAssignmentKurs1
- Slutgiltiga inlämningsuppgiften kurs 1 Jensen
+# Jensen Kurs 1
+ Första kursen Jensen
+ Lektioner & uppgifter + Slutuppgift
