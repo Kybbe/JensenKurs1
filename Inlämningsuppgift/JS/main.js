@@ -34,9 +34,14 @@ function changeSite(site) {
 }
 */
 
-$('body').on('click', function(e) {
-    if (e.target !== this)
-      return;
-    
+$('body').on('click', function(e) {   
+    if ( (e.target.id == "bannerIMG") || (e.target.id == "banner") ) {
+        changeTheme();
+    }
+
+    if (e.target !== this) {
+        return;
+    }
+
     changeTheme();
 });

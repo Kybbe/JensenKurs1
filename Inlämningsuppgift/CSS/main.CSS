@@ -1,9 +1,21 @@
 /* Normal theme || light */
 .theme-1 {
-    --background-color: white;
+    --background-color: #ececee;
+    --text-color: #ececee;
+    --inverted-text-color: #17242f;
+    --card-color: #17242f;
+    --accent-color1: #79b1df;
+    --accent-color2: #0f95d9;
+    --accent-color3: #d578b0;
+
+    --shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+
+    /*--background-color: white;
     --text-color: black;
     --soft-text-color: rgb(68, 68, 68);
-    --accent-color1: rgb(0, 255, 221);
+    --accent-color1: rgb(0, 255, 221);*/
+
+    
 }
 
 /* Dark theme */
@@ -54,42 +66,50 @@ body {
     cursor: pointer;
     background-color: transparent;
     border-radius: 50%;
-    font-size: 25px;
+    font-size: 35px;
 }
 
 #templateNav i {
-    filter: drop-shadow(5px 5px 5px var(--text-color));
-    color: var(--text-color);
+    filter: brightness(1) drop-shadow(5px 5px 5px var(--inverted-text-color));
+    color: var(--inverted-text-color);
+
+    transition: 0.3s filter linear, 0.3s -webkit-filter linear;
+}
+
+#templateNav i:hover {
+    filter: brightness(0.7) drop-shadow(5px 5px 5px var(--inverted-text-color));
 }
 
 #banner img {
-    width: 100%;
+    width: 98vw;
     margin-bottom: 10px;
+    max-width: 500px;
 }
 
 #templateCarousel {
     width: 98%;
     margin: 0 auto;
-    box-shadow: 2px 2px 4px;
     margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 #templateCarousel img {
     width: 100%;
     aspect-ratio: 16/9;
     display: block;
+    box-shadow: var(--shadow);
+    border-radius: 20px;
 }
 
 .card {
-    background-color: lightgray;
+    background-color: var(--card-color);
     width: 96%;
     display: block;
     margin: 10px auto;
-    border: 1px solid var(--soft-text-color);
     cursor: pointer;
     /* border-radius: 0px 0px 10px 10px; */
     border-radius: 10px;
-    box-shadow: 2px 2px 4px var(--soft-text-color);
+    box-shadow: var(--shadow);
     position: relative;
 
     opacity: 1;
@@ -111,6 +131,7 @@ body {
     aspect-ratio: 16/9;
     margin: 5px;
     border-radius: 10px;
+    box-shadow: var(--shadow)
 }
 
 .card h3, .card h4 {
@@ -118,20 +139,25 @@ body {
     display: inline;
 }
 
-.card h4 {
-    color: var(--soft-text-color);
+.card h3 {
+    color: var(--accent-color1);
+}
+
+.hashtagContainer {
+    position: absolute;
+    top: 10px;
+    right: 5px;
 }
 
 .hashtag {
     padding: 5px;
     border-radius: 5px;
     display: inline;
-    box-shadow: 1px 1px 4px var(--text-color);
+    box-shadow: 1px 1px 4px var(--inverted-text-color);
     float: right;
     margin: 0;
-    position: absolute;
-    top: 10px;
-    right: 10px;
+    margin-right: 5px;
+    color: var(--inverted-text-color);
 
     opacity: 1;
     transition: opacity 0.3s ease;
@@ -146,11 +172,11 @@ body {
 }
 
 .info {
-    background-color: greenyellow
+    background-color: var(--accent-color2);
 }
 
 .announcment {
-    background-color: blue;
+    background-color: var(--accent-color3);
 }
 
 @media (min-width: 500px) {
