@@ -1,0 +1,61 @@
+img {
+    width: 100%;
+    height: auto;
+}
+
+img, #carousel {
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px grey;
+    transition: box-shadow 0.5s ease;
+}
+
+img:hover, #carousel:hover {
+    box-shadow: unset !important;
+}
+
+#carousel {
+    width: 100%;
+}
+
+#carousel img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    box-shadow: unset;
+}
+
+.card {
+    box-shadow: 2px 2px 4px grey;
+}
+
+.card img {
+    box-shadow: 0 4px 2px -1px grey;
+}
+
+table {
+    width: 100%;
+}
+
+.imgBadge {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 100% !important;
+}
+
+.navbar-brand img {
+    width: 50px;
+    height: auto;
+    box-shadow: unset;
+    padding: 0;
+
+    transform: skewY(0deg);
+    transition: transform 0.4s ease;
+}
+
+.navbar-brand img:hover {
+    transform: skewY(10deg);
+}
+
+.col-sm-4 button {
+    margin: 5px;
+}
