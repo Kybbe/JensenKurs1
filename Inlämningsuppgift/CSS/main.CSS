@@ -1,21 +1,16 @@
 /* Normal theme || light */
 .theme-1 {
-    --background-color: #ececee;
-    --text-color: #ececee;
-    --inverted-text-color: #17242f;
-    --card-color: #17242f;
-    --accent-color1: #79b1df;
-    --accent-color2: #0f95d9;
-    --accent-color3: #d578b0;
 
+    --background-color: white;
+    --text-color: rgb(34, 34, 34);
+    --inverted-text-color: white;
+    --card-color: #D2D3D3;
+    --accent-color1: #271E8A;
+    --accent-color2: #271E8A;
+    --accent-color3: white;
+    
     --shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 
-    /*--background-color: white;
-    --text-color: black;
-    --soft-text-color: rgb(68, 68, 68);
-    --accent-color1: rgb(0, 255, 221);*/
-
-    
 }
 
 /*
@@ -37,23 +32,41 @@ GlitchPop
 
 /* Dark theme */
 .theme-2 {
-    --background-color: black;
-    --text-color: white;
-    --soft-text-color: rgb(218, 218, 218);
-    --accent-color1: rgb(25, 100, 0);
-}
-
-/* Hallon laktris? */
-.theme-3 {
+    
     --background-color: #282828;
     --text-color: white;
-    --soft-text-color: rgb(218, 218, 218);
+    --inverted-text-color: #282828;
+    --card-color: #3d3d3d;
     --accent-color1: #FB3C5D;
+    --accent-color2: #FB3C5D;
+
 }
 
-:root {
-    --hashtag1: #28393E;
-    --hashtag2: rgba(0, 134, 114, 0.18)
+/* Blue Raspberry? */
+.theme-3 {
+    
+    --background-color: #364f6b;
+    --text-color: #ececee;
+    --inverted-text-color: #17242f;
+    --card-color: #213144;
+    --accent-color1: #fc5185;
+    --accent-color2: #ff749e;
+
+    --shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+
+}
+
+/* Black and White */
+.theme-4 {
+    
+    --background-color: black;
+    --text-color: white;
+    --inverted-text-color: black;
+    --card-color: rgb(19, 19, 19);
+    --accent-color1: blue;
+    --accent-color2: red;
+
+    --shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 
 }
 
@@ -68,6 +81,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     overflow-x: hidden;
+
+    transition: all 0.5s ease;
 }
 
 #templateNav {
@@ -87,35 +102,42 @@ body {
 }
 
 #templateNav i {
-    filter: brightness(1) drop-shadow(5px 5px 5px var(--inverted-text-color));
-    color: var(--inverted-text-color);
+    filter: brightness(1) drop-shadow(5px 5px 5px var(--text-color));
+    color: var(--text-color);
 
     transition: 0.3s filter linear, 0.3s -webkit-filter linear;
 }
 
 #templateNav i:hover {
-    filter: brightness(0.7) drop-shadow(5px 5px 5px var(--inverted-text-color));
+    filter: brightness(0.7) drop-shadow(5px 5px 5px var(--text-color));
 }
 
 #banner img {
-    width: 98vw;
+    width: calc(100% - 60px);
     margin-bottom: 10px;
     max-width: 500px;
+    margin-left: 60px;
 }
 
-#templateCarousel {
+#carousel {
     width: 98%;
+    max-width: 1750px;
     margin: 0 auto;
     margin-bottom: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
 }
 
-#templateCarousel img {
+#carousel img {
     width: 100%;
     aspect-ratio: 16/9;
     display: block;
-    box-shadow: var(--shadow);
     border-radius: 20px;
+}
+
+.textColumn {
+    width: 97%;
+    margin: 0 auto;
 }
 
 .card {
@@ -193,17 +215,25 @@ body {
 }
 
 .announcment {
-    background-color: var(--accent-color3);
+    background-color: var(--accent-color2);
 }
 
 @media (min-width: 500px) {
     .card {
         width: 48% !important;
     }
+
+    .textColumn {
+        width: 48% !important;
+    }
 }
 
 @media (min-width: 1000px) {
     .card {
+        width: 32% !important;
+    }
+
+    .textColumn {
         width: 32% !important;
     }
 }
@@ -309,4 +339,8 @@ body {
 .break {
     flex-basis: 100%;
     height: 0;
+}
+
+.flippedCard {
+    transform: rotateY(180deg) !important;
 }

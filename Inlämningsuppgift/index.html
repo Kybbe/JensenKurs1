@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inlämngingsuppgift JKL</title>
     <link rel="icon" type="image/png" href="./Pictures/OPA-Logo.jpg"/>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+    <!-- Bootstrap CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./CSS/bootstrapCarousel.CSS">
 
+    <!-- JQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/811a2ddc97.js" crossorigin="anonymous" rel="nofollow"></script>
 
@@ -27,9 +33,50 @@
 
     <!-- Carousel to show current news maybe? -->
 
-    <div id="templateCarousel">
-        <img src="./Pictures/CarouselPicture.jpg" alt="Fake Carousel">
-    </div>
+    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./Pictures/CarouselPicture.jpg" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./Pictures/CarouselPicture.jpg" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./Pictures/CarouselPicture.jpg" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fas fa-chevron-left"></i></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"><i class="fas fa-chevron-right"></i></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- Text in columns to fulfill project qualifications -->
+      <div class="textColumn">
+        <h2>Yup some text!</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sapiente fugiat voluptates non error dolorem culpa consequatur labore iusto ratione dolorum doloremque quo aut obcaecati rerum consectetur delectus nisi fugit ut asperiores, in aliquam perspiciatis? Exercitationem beatae libero modi consequuntur.</p>
+      </div>
+      <div class="textColumn">
+        <h2>Yup some text!</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sapiente fugiat voluptates non error dolorem culpa consequatur labore iusto ratione dolorum doloremque quo aut obcaecati rerum consectetur delectus nisi fugit ut asperiores, in aliquam perspiciatis? Exercitationem beatae libero modi consequuntur.</p>
+      </div>
+      <div class="textColumn">
+        <h2>Yup some text!</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sapiente fugiat voluptates non error dolorem culpa consequatur labore iusto ratione dolorum doloremque quo aut obcaecati rerum consectetur delectus nisi fugit ut asperiores, in aliquam perspiciatis? Exercitationem beatae libero modi consequuntur.</p>
+      </div>
+      <div class="textColumn">
+        <h2>Yup some text!</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui esse repellendus dignissimos! Corrupti culpa aliquam iusto quia. Obcaecati, quidem repellendus! lkajsdlkjl laksj d laksj dlaksdj laskdjalskd jalskdjlaksj dlaks jdlaks dlak jslk laksjdlaksj dlask dalsk dalskjd laskj dalsk djalskd jalskdj laskj Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sapiente fugiat voluptates non error dolorem culpa consequatur labore iusto ratione dolorum doloremque quo aut obcaecati rerum consectetur delectus nisi fugit ut asperiores, in aliquam perspiciatis? Exercitationem beatae libero modi consequuntur.</p>
+      </div>
 
     <!-- Cards for each event with photo, description, and tags -->
     <div class="card" onclick="location.href='michiganCity.html'">
@@ -136,7 +183,6 @@
             <h4>2021 Thunder on Cocoa Beach</h4>
         </div>
     </div>
-
 
     <!-- Footer for links to old site and socials -->
 

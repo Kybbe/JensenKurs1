@@ -8,7 +8,9 @@ function changeTheme() {
        setTheme('theme-2');
    } else if (localStorage.getItem('theme') === 'theme-2'){
     setTheme('theme-3');
-   } else if (localStorage.getItem('theme') === 'theme-3'){
+   }else if (localStorage.getItem('theme') === 'theme-3'){
+    setTheme('theme-4');
+   } else if (localStorage.getItem('theme') === 'theme-4'){
     setTheme('theme-1');
    } else {
        setTheme('theme-1');
@@ -21,18 +23,11 @@ if (localStorage.getItem('theme') === 'theme-1'){
     setTheme('theme-2');
 } else if (localStorage.getItem('theme') === 'theme-3'){
     setTheme('theme-3');
+} else if (localStorage.getItem('theme') === 'theme-4'){
+    setTheme('theme-4');
 } else {
     setTheme('theme-1');
 }
-
-/*
-function changeSite(site) {    
-    var str = window.location.href;
-    var n = str.lastIndexOf('/');
-    var result = str.substring(0, n + 1); 
-    window.location.href = result + site + ".html";
-}
-*/
 
 $('body').on('click', function(e) {   
     if ( (e.target.id == "bannerIMG") || (e.target.id == "banner") ) {
@@ -45,3 +40,11 @@ $('body').on('click', function(e) {
 
     changeTheme();
 });
+
+function flipCard(card) {
+    if (card.className == "card flippedCard") {
+        $(card).removeClass("flippedCard")
+    } else {
+        $(card).addClass("flippedCard");
+    }
+}
