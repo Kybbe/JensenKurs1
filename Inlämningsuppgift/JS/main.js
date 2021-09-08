@@ -3,30 +3,25 @@ function setTheme(themeName) {
     document.documentElement.className = themeName;
 }
 
+const NumberOfThemes = 5;
 function changeTheme() {
-   if (localStorage.getItem('theme') === 'theme-1'){
-       setTheme('theme-2');
-   } else if (localStorage.getItem('theme') === 'theme-2'){
-    setTheme('theme-3');
-   }else if (localStorage.getItem('theme') === 'theme-3'){
-    setTheme('theme-4');
-   } else if (localStorage.getItem('theme') === 'theme-4'){
-    setTheme('theme-1');
-   } else {
-       setTheme('theme-1');
-   }
+    for(i = 0; i <= NumberOfThemes; i++) {
+        if (localStorage.getItem('theme') === ('theme-' + i)){ //if theme is theme-2 for example
+            if(i == NumberOfThemes) { // Check if last theme
+                setTheme('theme-1'); // if so, wrap around to first theme again
+                break;
+            }
+            setTheme('theme-' + (i + 1)); // If not, change to next theme
+            break;
+        }
+    }
 }
 
-if (localStorage.getItem('theme') === 'theme-1'){
-    setTheme('theme-1');
-} else if (localStorage.getItem('theme') === 'theme-2'){
-    setTheme('theme-2');
-} else if (localStorage.getItem('theme') === 'theme-3'){
-    setTheme('theme-3');
-} else if (localStorage.getItem('theme') === 'theme-4'){
-    setTheme('theme-4');
+selectedTheme = localStorage.getItem('theme')
+if(selectedTheme == null || selectedTheme == undefined){
+    setTheme('theme-1')
 } else {
-    setTheme('theme-1');
+    setTheme(localStorage.getItem('theme'))
 }
 
 $('body').on('click', function(e) {   
@@ -46,5 +41,13 @@ function flipCard(card) {
         $(card).removeClass("flippedCard")
     } else {
         $(card).addClass("flippedCard");
+    }
+}
+
+function openNavbar() {
+    if ($("#navbar")[0].className == "openedNavbar") {
+        $("#navbar").removeClass("openedNavbar");
+    } else {
+        $("#navbar").addClass("openedNavbar");
     }
 }

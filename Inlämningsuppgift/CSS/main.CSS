@@ -10,25 +10,9 @@
     --accent-color3: white;
     
     --shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    --snow-on: none; /* Just for the christmas theme really, none is off, unset is on */
 
 }
-
-/*
-GlitchPop
-
-    https://coolors.co/f72585-b5179e-7209b7-560bad-480ca8-3a0ca3-3f37c9-4361ee-4895ef-4cc9f0
-    #f72585
-    #b5179e
-    #7209b7
-    #560bad
-    #480ca8
-    #3a0ca3
-    #3f37c9
-    #4361ee
-    #4895ef
-    #4cc9f0
-
-*/
 
 /* Dark theme */
 .theme-2 {
@@ -39,6 +23,9 @@ GlitchPop
     --card-color: #3d3d3d;
     --accent-color1: #FB3C5D;
     --accent-color2: #FB3C5D;
+    
+    --shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    --snow-on: none;
 
 }
 
@@ -51,8 +38,9 @@ GlitchPop
     --card-color: #213144;
     --accent-color1: #fc5185;
     --accent-color2: #ff749e;
-
+    
     --shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    --snow-on: none;
 
 }
 
@@ -65,8 +53,24 @@ GlitchPop
     --card-color: rgb(19, 19, 19);
     --accent-color1: blue;
     --accent-color2: red;
-
+    
     --shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    --snow-on: none;
+    
+}
+
+/* Christmas */
+.theme-5 {
+    
+    --background-color: #002D26;
+    --text-color: white;
+    --inverted-text-color: #282828;
+    --card-color: #A01A21;
+    --accent-color1: gold;
+    --accent-color2: #A68126;
+    
+    --shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    --snow-on: unset; /* Snow is on */
 
 }
 
@@ -78,45 +82,19 @@ html, body {
 body {
     background-color: var(--background-color);
     color: var(--text-color);
-    display: flex;
-    flex-wrap: wrap;
     overflow-x: hidden;
 
     transition: all 0.5s ease;
 }
 
-#templateNav {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    z-index: 2;
-}
-
-#templateNav button {
-    border: none;
-    padding: 5px;
-    cursor: pointer;
-    background-color: transparent;
-    border-radius: 50%;
-    font-size: 35px;
-}
-
-#templateNav i {
-    filter: brightness(1) drop-shadow(5px 5px 5px var(--text-color));
-    color: var(--text-color);
-
-    transition: 0.3s filter linear, 0.3s -webkit-filter linear;
-}
-
-#templateNav i:hover {
-    filter: brightness(0.7) drop-shadow(5px 5px 5px var(--text-color));
+#active {
+    filter: brightness(3);
 }
 
 #banner img {
     width: calc(100% - 60px);
     margin-bottom: 10px;
     max-width: 500px;
-    margin-left: 60px;
 }
 
 #carousel {
@@ -218,25 +196,140 @@ body {
     background-color: var(--accent-color2);
 }
 
-@media (min-width: 500px) {
-    .card {
-        width: 48% !important;
-    }
 
-    .textColumn {
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.flippableCard {
+    transform: translateY(0deg);
+    transition: transform 1s ease-in-out;
+}
+
+.flippedCard {
+    transform: rotateY(180deg) !important;
+}
+
+.textColumn h2 {
+    color: var(--accent-color1);
+}
+
+@media (min-width: 500px) {
+    .card, .textColumn {
         width: 48% !important;
     }
 }
 
 @media (min-width: 1000px) {
-    .card {
-        width: 32% !important;
-    }
-
-    .textColumn {
+    .card, .textColumn {
         width: 32% !important;
     }
 }
+
+@media (min-width: 1200px) {
+    #carousel {
+        width: 86% !important;
+    }
+}
+
+
+#navbarButton {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 3;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 50%;
+    font-size: 35px;
+}
+
+#navbarButton i {
+    filter: brightness(1) drop-shadow(5px 5px 5px var(--text-color));
+    opacity: 1;
+    color: var(--text-color);
+
+    transition: opacity 1s ease;
+}
+
+#navbarButton i:hover {
+    opacity: 0.7;
+}
+
+#navbar {
+    background-color: var(--card-color);
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    padding: 10px;
+    padding-top: 70px;
+    height: 100%;
+    z-index: 2;
+
+    transform: translateX(100%);
+    transition: transform 0.7s ease;
+}
+
+.openedNavbar {
+    transform: translateX(0) !important;
+}
+
+#navbar a {
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.5em;
+    text-decoration: none;
+
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+#navbar a:hover {
+    color: var(--inverted-text-color);
+}
+
+@media (min-width: 1100px) {
+    #navbar {
+        background-color: unset;
+        position: relative;
+        padding: 0;
+
+        transform: translateX(0);
+    }
+
+    #navbar a {
+        width: unset;
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    #navbar a:hover {
+        color: var(--inverted-text-color);
+    }
+
+    #navbarButton {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -336,11 +429,37 @@ body {
   );
 }
 
-.break {
-    flex-basis: 100%;
-    height: 0;
+
+
+
+
+
+
+/*
+snow
+*/
+.snowflakes {
+    display: var(--snow-on);
 }
 
-.flippedCard {
-    transform: rotateY(180deg) !important;
-}
+.snowflake {
+    color: #fff;
+    font-size: 1em;
+    font-family: Arial;
+    text-shadow: 0 0 1px #000;
+  }
+  
+  @-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%{-webkit-transform:translateX(0px);transform:translateX(0px)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}100%{-webkit-transform:translateX(0px);transform:translateX(0px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%{transform:translateX(0px)}50%{transform:translateX(80px)}100%{transform:translateX(0px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}
+  /* Demo Purpose Only*/
+  .demo {
+    font-family: 'Raleway', sans-serif;
+      color:#fff;
+      display: block;
+      margin: 0 auto;
+      padding: 15px 0;
+      text-align: center;
+  }
+  .demo a{
+    font-family: 'Raleway', sans-serif;
+  color: #000;		
+  }
