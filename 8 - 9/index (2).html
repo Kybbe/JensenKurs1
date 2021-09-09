@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/mystyle.css">
+    <title>New slider</title>
+  </head>
+  <body>
+      
+      <h1>Slider med javascript</h1>
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+        
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 5</div>
+        <img src="Pictures/neel.jpg" style="width:100%">
+        <div class="text">Neel trimaran</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 5</div>
+        <img src="Pictures/rock.jpg" style="width:100%">
+        <div class="text">Rock in the evening</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 5</div>
+        <img src="Pictures/evo.jpg" style="width:100%">
+        <div class="text">Evo unfolded</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <img src="Pictures/bali.jpeg" style="width:100%">
+        <div class="text">Bali</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="Pictures/mermaid.jpeg" style="width:100%">
+        <div class="text">Sjöjungfru === Båt</div>
+      </div>
+      
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+      <span class="dot" onclick="currentSlide(4)"></span> 
+      <span class="dot" onclick="currentSlide(5)"></span> 
+    </div>
+      
+    </body>
+    <script src="./JS/main.js"></script>
+  </html>

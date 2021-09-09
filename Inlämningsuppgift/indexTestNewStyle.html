@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inlämngingsuppgift JKL</title>
+    <link rel="icon" type="image/png" href="./Pictures/OPA-Logo.jpg"/>
+    
+    <!-- Bootstrap CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./CSS/bootstrapCarousel.CSS">
+
+    <!-- JQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/811a2ddc97.js" crossorigin="anonymous" rel="nofollow"></script>
+
+    <link rel="stylesheet" href="./CSS/mainTest.CSS">
+    <script defer src="./JS/main.js"></script>
+</head>
+<body>
+    
+    <div id="topContainer">
+        
+        <!-- Welcome banner -->
+        <div id="banner">
+            <img id="bannerIMG" src="./Pictures/Opa Racing full Logo.png" alt="OPA racing logo">
+        </div>
+    
+        <!-- Nav -->
+        <div id="navbar">
+            <a href="./index.html" id="active">Home</a>
+            <a href="#">Schedule</a>
+            <a href="#">National standings</a>
+            <a href="#">Gallery</a>
+            <a href="#">OPA Racing LIVE</a>
+            <a href="#">Partners</a>
+            <a href="#">Contact</a>
+        </div>
+        <button id="navbarButton" onclick="openNavbar()"><i class="fas fa-bars"></i></button>
+
+    </div>
+
+    <!-- Carousel to show current news maybe? -->
+    <div id="flexContainer" style="display: flex; flex-wrap: wrap;">
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./Pictures/CarouselPicture.jpg" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./Pictures/CarouselPicture.jpg" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./Pictures/CarouselPicture.jpg" alt="...">
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fas fa-chevron-left"></i></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"><i class="fas fa-chevron-right"></i></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    <div class="cardHolderWrapper">
+        <p class="cardHolderHashtag results">Results</p>
+
+        <div class="cardHolder">
+            <div class="card" onclick="location.href='michiganCity.html'">
+                <img src="./Pictures/MichiganCity.jpg" alt="Michigan City Racing">
+                <div class="hashtagContainer">
+                    <p class="hashtag new">New!</p>
+                </div>
+                <div class="cardBody">
+                    <h3>Michigan City</h3>
+                    <br>
+                    <h4>2021 Great Lakes Grand Prix</h4>
+                </div>
+            </div>
+
+            <div class="card" onclick="location.href='stClair.html'">
+                <img src="./Pictures/StClair.jpg" alt="St Clair Racing">
+                <div class="cardBody">
+                    <h3>St Clair</h3>
+                    <br>
+                    <h4>2021 St Clair River Classic</h4>
+                </div>
+            </div>
+
+            <div class="card" onclick="location.href='eastlake.html'">
+                <img src="./Pictures/Eastlake.jpg" alt="Eastlake Racing">
+                <div class="cardBody">
+                    <h3>Eastlake</h3>
+                    <br>
+                    <h4>2021 Great Lakes Grand Prix</h4>
+                </div>
+            </div>
+
+            <div class="card" onclick="location.href='sarasota.html'">
+                <img src="./Pictures/Sarasota.jpg" alt="Sarasota Racing">
+                <div class="cardBody">
+                    <h3>Sarasota</h3>
+                    <br>
+                    <h4>2021 Sarasota Powerboat Grand Prix</h4>
+                </div>
+            </div>
+
+            <div class="card" onclick="location.href='pointPleasantBeach.html'">
+                <img src="./Pictures/PointPleasantBeach.jpg" alt="Point Pleasant Beach Racing">
+                <div class="cardBody">
+                    <h3>Point Pleasant Beach</h3>
+                    <br>
+                    <h4>2021 Sarasota Powerboat Grand Prix</h4>
+                </div>
+            </div>
+    
+            <div class="card" onclick="location.href='lakeOzark.html'">
+                <img src="./Pictures/LakeOzark.jpg" alt="Lake Ozark Racing">
+                <div class="cardBody">
+                    <h3>Lake Ozark</h3>
+                    <br>
+                    <h4>2021 Lake Ozark Race</h4>
+                </div>
+            </div>
+    
+            <div class="card" onclick="location.href='cocoaBeach.html'">
+                <img src="./Pictures/CocoaBeach.jpg" alt="Cocoa Beach Racing">
+                <div class="cardBody">
+                    <h3>Cocoa Beach</h3>
+                    <br>
+                    <h4>2021 Thunder on Cocoa Beach</h4>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="cardHolderWrapper">
+        <p class="cardHolderHashtag announcment">Announcment</p>
+
+        <div class="cardHolder">
+
+            <div class="card" onclick="location.href='annoucnment1.html'">
+                <img src="./Pictures/Announcment1.jpg" alt="Announcment of northeast championship Racing">
+                <div class="cardBody">
+                    <h3>2021 Northeast Championship Series</h3>
+                </div>
+            </div>
+
+            <div class="card" onclick="location.href='sarasotaAnnouncment.html'">
+                <img src="./Pictures/SarasotaAnnouncmentAndInformation.jpg" alt="Sarasota Powerboat Grand Prix Announcment Racing">
+                <div class="cardBody">
+                    <h3>Sarasota Powerboat Grand Prix Info</h3>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer for links to old site and socials -->
+
+    <!-- Sites for all announcments etc.. -->
+
+
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+        <div class="snowflake">
+        ❄
+        </div>
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+        <div class="snowflake">
+        ❄
+        </div>
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+        <div class="snowflake">
+        ❄
+        </div>
+      </div>
+
+</body>
+</html>

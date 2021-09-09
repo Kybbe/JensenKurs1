@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            * {
+                text-align: center;
+                transition: font-size 1s ease;
+            }
+            img {
+                transform: rotateY(0);
+
+                transition: transform 1s ease;
+            }
+        </style>
+    </head>
+<body>
+    <h1>First heading for example test</h1>
+    <h2>What Can JavaScript Do?</h2>
+    <h1>Second heading test</h1>
+    <p>JavaScript can change HTML attribute values.</p>
+    <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+        
+    <img id="myImage" src="./Pictures/pic_bulboff.gif" style="width:100px">
+    <br>
+    <button onclick="switchLight()">Switch</button>
+    
+    <br>
+    <h1 id="changingHeader">My buttons</h1>
+    <br>
+
+    <button onclick="fontSizeH1()">Change size of h1's</button>
+    <button onclick="changeHeaderText()">Change text of the header above</button>
+</body>
+
+<script>
+    largeh1s = false;
+    clicks = 0;
+    bulb = "off";
+    
+    function fontSizeH1() {
+        h1s = document.getElementsByTagName("h1");
+
+        if(largeh1s == false) {
+            for(i = 0; i < h1s.length; i++) {
+                h1s[i].style.fontSize = "4em"
+
+                largeh1s = true;
+            }
+        } else {
+            for(i = 0; i < h1s.length; i++) {
+                h1s[i].style.fontSize = "2em";
+
+                largeh1s = false;
+            }
+        }
+    }
+
+    function changeHeaderText() {
+        headerTexts = ['What are you doing?', 'Why is my body morphing this way??', 'What is GOING OOON', 'Please stop clicking', 'It hurts!', 'STOOOOOP', 'Please i BEG YOU', 'Why wont you just stop clicking????!?!?!?!?!?', 'Well, if you dont stop i will.... Stop changing!', 'Maybe that will be less fun?', 'HMM?', 'Okay i will stop now', 'Okay i will stop now', 'Okay i will stop now', 'Okay i will stop now', 'Okay i will stop now', 'Okay i will stop now', 'Okay i will stop now', 'You have really just clicked me 20 times in a row.', 'Could you please stop now', 'Thanks!', 'You are a terrible person, I dont wanna hang out with you anymore', 'BYE', '']
+
+        header = document.getElementById("changingHeader");
+
+        if(clicks == headerTexts.length) { return }
+        header.innerHTML = headerTexts[clicks];
+        clicks++
+    }
+
+    function switchLight() {
+        lightbulb = document.getElementById('myImage');
+        if(bulb == "off") {
+            lightbulb.style.transform = "rotateY(180deg)"
+            setTimeout(function(){ lightbulb.src='./Pictures/pic_bulbon.gif' }, 250);
+            
+            bulb = "on"
+        } else {
+            lightbulb.style.transform = "rotateY(0deg)"
+            setTimeout(function(){ lightbulb.src='./Pictures/pic_bulboff.gif' }, 250);
+        
+            bulb = "off"
+        }
+
+    }
+</script>
+</html>
