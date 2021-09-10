@@ -21,26 +21,8 @@
 </head>
 <body>
     
-    <div id="topContainer">
-        
-        <!-- Welcome banner -->
-        <div id="banner">
-            <img id="bannerIMG" src="./Pictures/Opa Racing full Logo.png" alt="OPA racing logo">
-        </div>
-    
-        <!-- Nav -->
-        <div id="navbar">
-            <a href="./index.html" id="active">Home</a>
-            <a href="#">Schedule</a>
-            <a href="#">National standings</a>
-            <a href="#">Gallery</a>
-            <a href="#">OPA Racing LIVE</a>
-            <a href="#">Partners</a>
-            <a href="#">Contact</a>
-        </div>
-        <button id="navbarButton" onclick="openNavbar()"><i class="fas fa-bars"></i></button>
-
-    </div>
+    <!-- Nav -->
+    <div data-include="navbar"></div>
 
     <!-- Carousel to show current news maybe? -->
     <div id="flexContainer" style="display: flex; flex-wrap: wrap;">
@@ -264,39 +246,7 @@
 
     <!-- Sites for all announcments etc.. -->
 
-
-    <div class="snowflakes" aria-hidden="true">
-        <div class="snowflake">
-        ❅
-        </div>
-        <div class="snowflake">
-        ❅
-        </div>
-        <div class="snowflake">
-        ❆
-        </div>
-        <div class="snowflake">
-        ❄
-        </div>
-        <div class="snowflake">
-        ❅
-        </div>
-        <div class="snowflake">
-        ❆
-        </div>
-        <div class="snowflake">
-        ❄
-        </div>
-        <div class="snowflake">
-        ❅
-        </div>
-        <div class="snowflake">
-        ❆
-        </div>
-        <div class="snowflake">
-        ❄
-        </div>
-      </div>
+    <div data-include="snowflakes"></div>
 
 </body>
 </html>

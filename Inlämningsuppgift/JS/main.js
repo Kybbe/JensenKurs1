@@ -1,3 +1,9 @@
+var includes = $('[data-include]')
+  $.each(includes, function () {
+    var file = './dependencies/' + $(this).data('include') + '.html'
+    $(this).load(file)
+  })
+
 function setTheme(themeName) {
     localStorage.setItem('theme', themeName);
     document.documentElement.className = themeName;

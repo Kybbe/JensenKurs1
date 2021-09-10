@@ -1,0 +1,28 @@
+<div id="topContainer">
+
+    <div id="banner">
+        <img onclick="location.href='index.html'" id="bannerIMG" src="./Pictures/Opa Racing full Logo.png" alt="OPA racing logo">
+    </div>
+
+    <div id="navbar">
+        <a id="homeLink" href="./index.html">Home</a>
+        <a id="scheduleLink" href="./schedule.html">Schedule</a>
+        <a id="standingsLink" href="#">National standings</a>
+        <a id="galleryLink" href="#">Gallery</a>
+        <a id="liveLink" href="#">OPA Racing LIVE</a>
+        <a id="partnersLink" href="#">Partners</a>
+        <a id="contactLink" href="#">Contact</a>
+    </div>
+    <button id="navbarButton" onclick="openNavbar()"><i class="fas fa-bars"></i></button>
+
+</div>
+
+<script>
+    var path = window.location.pathname;
+    var page = path.split("/").pop().replace('.html','');
+    if(page == "index"){
+        page = "home";
+    }
+
+    $("#" + page + "Link").addClass("active")
+</script>

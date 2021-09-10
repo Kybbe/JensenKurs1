@@ -88,7 +88,7 @@ body {
 
 }
 
-#active {
+.active {
     color: var(--accent-color1) !important;
     font-weight: bold;
 }
@@ -116,7 +116,7 @@ body {
 
 #carousel img {
     width: 100%;
-    aspect-ratio: 16/9;
+    max-height: 80vh;
     display: block;
 }
 
