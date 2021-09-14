@@ -31,7 +31,7 @@ if(selectedTheme == null || selectedTheme == undefined){
 }
 
 $('body').on('click', function(e) {   
-    if ( (e.target.id == "bannerIMG") || (e.target.id == "banner") ) {
+    if ( (e.target.id == "banner") ) {
         changeTheme();
     }
 
