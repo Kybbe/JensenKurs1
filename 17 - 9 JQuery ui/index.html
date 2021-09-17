@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>17/9 Övningar UI</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+    <link rel="stylesheet" href="./CSS/main.CSS">
+    <script defer src="./JS/main.js"></script>
+</head>
+<body>
+    
+    <div id="accordion">
+        <h3>Section 1</h3>
+        <div>
+          <p>
+          Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+          ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+          amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+          odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+          </p>
+        </div>
+
+        <h3>Section 2</h3>
+        <div>
+          <p>
+          Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+          purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+          velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+          suscipit faucibus urna.
+          </p>
+        </div>
+
+        <h3>Section 3</h3>
+        <div>
+          <p>
+          Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+          Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+          ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+          lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+          </p>
+          <ul>
+            <li>List item one</li>
+            <li>List item two</li>
+            <li>List item three</li>
+          </ul>
+        </div>
+    
+    <h3>DatePicker and Tooltip</h3>
+    <div>
+        <p>Date: <input type="text" title="Pick a date please!" id="datepicker" size="30"></p>
+
+        <p>Format options:<br>
+            <select id="format">
+              <option value="mm/dd/yy">Default - mm/dd/yy</option>
+              <option value="yy-mm-dd">ISO 8601 - yy-mm-dd</option>
+              <option value="d M, y">Short - d M, y</option>
+              <option value="d MM, y">Medium - d MM, y</option>
+              <option value="DD, d MM, yy">Full - DD, d MM, yy</option>
+              <option value="'day' d 'of' MM 'in the year' yy">With text - 'day' d 'of' MM 'in the year' yy</option>
+            </select>
+          </p>
+    </div>
+      
+    <h3>Slider</h3>
+    <div>
+        <div id="slider"></div>
+        <p>
+            <label for="amount">Donation amount ($50 increments):</label>
+            <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+        </p>
+    </div>
+</div>
+      
+    </body>
+</html>

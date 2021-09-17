@@ -1,0 +1,87 @@
+<footer style="background-color: var(--inverted-text-color);">
+    <ol style="width: 100%;">
+        <li><a href="#top">Back to the Top</a></li>
+        <li>|</li>
+        <li><a href="./index.html">Home</a></li>
+        <li>|</li>
+        <li><a href="./schedule.html">Schedule</a></li>
+        <li>|</li>
+        <li><a href="./standings.html">Standings</a></li>
+        <li>|</li>
+        <li><a href="./gallery.html">Gallery</a></li>
+        <li>|</li>
+        <li><a href="./live.html">Live</a></li>
+        <li>|</li>
+        <li><a href="./partners.html">Partners</a></li>
+        <li>|</li>
+        <li><a href="./contact.html">Contact</a></li>
+    </ol>
+    <p>
+        OPAracing.org is the official web site for OPA Racing, LLC. OPA Racing LLC, is also referred to as the Offshore Powerboat Association. The OPA logos and marks depicted herein are the property of OPA Racing LLC and may not be reproduced without the prior written consent of OPA Racing, LLC. All Rights Reserved. Any other third party trademarks or copyrights are property of their respective owners. All rights reserved.
+    </p>
+    <p>
+        Created, Designed & Operated by <a href="github.com/Kybbe">Kybbe</a>
+    </p>
+    <p>
+        Copyright © 2021. All Rights Reserved.
+    </p>
+    <ul style="width: 100%;">
+        <li><a href="http://www.oparacing.org/privacy_policy">Privacy Policy</a></li>
+        <li><a href="http://www.oparacing.org/seugneriygoerg">Terms of use</a></li>
+        <li><a href="http://www.oparacing.org/eoriygineghg">Cookies</a></li>
+    </ul>
+</footer>
+
+<style>   
+    footer {
+        box-shadow: 0px -2px 16px black;
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+        padding: 0 20px;
+        padding-bottom: 10px;
+    }
+
+    footer ol, footer ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 10px 0px;
+        margin: 0;
+    }
+
+    footer a {
+        color: var(--text-color);
+
+        transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+        color: var(--accent-color1);
+    }
+
+    footer > p {
+        text-align: center;
+        width: 100%;
+    }
+
+    footer ol > li {
+        padding: 10px;
+    }
+
+    footer ol > li:nth-child(even) {
+        display: none;
+    }
+
+    @media (min-width: 550px) {
+        footer ol > li:nth-child(even) {
+            display: unset !important;
+        }
+
+        footer ol > li {
+            padding: 0px;
+        }
+    }
+</style>

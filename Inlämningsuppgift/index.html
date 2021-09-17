@@ -31,24 +31,31 @@
             <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
             </div>
             <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="./Pictures/CarouselPicture.jpg" alt="...">
+                <img src="./Pictures/CarouselPicture.jpg" alt="Picture of boat">
                 <div class="carousel-caption">
                     <h2>2018 Fountain APBA Kilo Speed run</h2>
-                    <p></p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="./Pictures/CarouselPicture2.jpg" alt="...">
-                <div class="carousel-caption" style="color: var(--inverted-text-color);">
+                <img src="./Pictures/CarouselPicture2.jpg" alt="Picture of boat">
+                <div class="carousel-caption">
                     <h2>2017 Fall river grand prix</h2>
-                    <p></p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="./Pictures/CarouselPicture3.jpg" alt="...">
+                <video autoplay loop muted>
+                    <source src="./Pictures/videoRace.mp4" type="video/mp4" />
+                </video>
+                <div class="carousel-caption">
+                    <h2>Team 27 Port Huron race</h2>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./Pictures/CarouselPicture3.jpg" alt="Picture of boat">
                 <div class="carousel-caption">
                     <h2>2017 Englewood</h2>
                     <p>Race in class Vee Extreme</p>
@@ -143,7 +150,7 @@
 
         <div class="cardHolder">
 
-            <div class="card" onclick="location.href='annoucnment1.html'">
+            <div class="card" onclick="location.href='announcment1.html'">
                 <img src="./Pictures/Announcment1.jpg" alt="Announcment of northeast championship Racing">
                 <div class="cardBody">
                     <h3>2021 Northeast Championship Series</h3>
@@ -241,10 +248,11 @@
         </div>
         
     </div>
-
+    
     <!-- Footer for links to old site and socials -->
-
-    <!-- Sites for all announcments etc.. -->
+    <div data-include="footer"></div>
+    
+    <!-- Snowflakes for snow effect when christmas theme is on -->
 
     <div data-include="snowflakes"></div>
 
