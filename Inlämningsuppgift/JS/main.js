@@ -9,10 +9,9 @@ function setTheme(themeName) {
     document.documentElement.className = themeName;
 }
 
-themeIcons = ['<i class="far fa-sun"></i>', '<i class="fas fa-moon"></i>', '<i class="fab fa-raspberry-pi"></i>', '<i class="fas fa-newspaper"></i>', '<i class="fas fa-gifts"></i>']
-
-const NumberOfThemes = 5;
 function changeTheme() {
+    themeIcons = ['<i class="far fa-sun"></i>', '<i class="fas fa-moon"></i>', '<i class="fab fa-raspberry-pi"></i>', '<i class="fas fa-newspaper"></i>', '<i class="fas fa-gifts"></i>']
+    const NumberOfThemes = 5;
     for(i = 0; i <= NumberOfThemes; i++) {
         if (localStorage.getItem('theme') === ('theme-' + i)){ //if theme is theme-2 for example
             if(i == NumberOfThemes) { // Check if last theme
@@ -47,8 +46,6 @@ $(".flippableCard").mousedown( function() {
         $(card).addClass("flippedCard");
     }
 })
-
-
 
 function openNavbar() {
     if ($("#navbar")[0].className == "openedNavbar") {
