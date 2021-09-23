@@ -2,19 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inlämngingsuppgift JKL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Opa Racing Results and Information" />
+    <meta name="keywords" content="OPA, offshore, powerboat, racing, boats, boat racing, powerboat association" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="OPA Racing" />
+    <meta property="og:url" content="https://OpaRacing.org" />
+    <meta property="og:image" content="https://lh3.googleusercontent.com/proxy/EnwEdXd_EPL77MSNPduTXt9vvaE0BF9aqI5FuNS-UVMTuNJVYotIGjNX0Iha7ezzifSEnV79Bixr6shqp98R2Ni_4iCGhSjouW2Nrp9l7VDRvWhyeayULJwRQzxk" />
+    <meta property="og:description" content="See the newest OPA Racing results!" />
+    <meta property="og:site_name" content="OpaRacing.org" />
+
+    <title>Opa Racing</title>
     <link rel="icon" type="image/png" href="./Pictures/OPA-Logo.jpg"/>
-    
-    <!-- Bootstrap CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./CSS/bootstrapCarousel.CSS">
 
     <!-- JQuery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/811a2ddc97.js" crossorigin="anonymous" rel="nofollow"></script>
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+
 
     <link rel="stylesheet" href="./CSS/main.CSS">
     <script defer src="./JS/main.js"></script>
@@ -23,230 +34,188 @@
     
     <!-- Nav -->
     <div data-include="navbar"></div>
-
-    <!-- Carousel to show current news maybe? -->
+    
+    <!-- Carousel to show current news -->
     <div id="flexContainer" style="display: flex; flex-wrap: wrap;">
-        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            </div>
-            <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="./Pictures/CarouselPicture.jpg" alt="Picture of boat">
-                <div class="carousel-caption">
-                    <h2>2018 Fountain APBA Kilo Speed run</h2>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="./Pictures/CarouselPicture2.jpg" alt="Picture of boat">
-                <div class="carousel-caption">
-                    <h2>2017 Fall river grand prix</h2>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <video autoplay loop muted>
-                    <source src="./Pictures/videoRace.mp4" type="video/mp4" />
-                </video>
-                <div class="carousel-caption">
-                    <h2>Team 27 Port Huron race</h2>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="./Pictures/CarouselPicture3.jpg" alt="Picture of boat">
-                <div class="carousel-caption">
-                    <h2>2017 Englewood</h2>
-                    <p>Race in class Vee Extreme</p>
-                </div>
-            </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fas fa-chevron-left"></i></span>
-            <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"><i class="fas fa-chevron-right"></i></span>
-            <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-
-    <div class="cardHolderWrapper">
-        <p class="cardHolderHashtag results">Results</p>
-
-        <div class="cardHolder">
-            <div class="card" onclick="location.href='michiganCity.html'">
-                <img src="./Pictures/MichiganCity.jpg" alt="Michigan City Racing">
-                <div class="hashtagContainer">
-                    <p class="hashtag new">New!</p>
-                </div>
-                <div class="cardBody">
-                    <h3>Michigan City</h3>
-                    <br>
-                    <h4>2021 Great Lakes Grand Prix</h4>
-                </div>
-            </div>
-
-            <div class="card" onclick="location.href='stClair.html'">
-                <img src="./Pictures/StClair.jpg" alt="St Clair Racing">
-                <div class="cardBody">
-                    <h3>St Clair</h3>
-                    <br>
-                    <h4>2021 St Clair River Classic</h4>
-                </div>
-            </div>
-
-            <div class="card" onclick="location.href='eastlake.html'">
-                <img src="./Pictures/Eastlake.jpg" alt="Eastlake Racing">
-                <div class="cardBody">
-                    <h3>Eastlake</h3>
-                    <br>
-                    <h4>2021 Great Lakes Grand Prix</h4>
-                </div>
-            </div>
-
-            <div class="card" onclick="location.href='sarasota.html'">
-                <img src="./Pictures/Sarasota.jpg" alt="Sarasota Racing">
-                <div class="cardBody">
-                    <h3>Sarasota</h3>
-                    <br>
-                    <h4>2021 Sarasota Powerboat Grand Prix</h4>
-                </div>
-            </div>
-
-            <div class="card" onclick="location.href='pointPleasantBeach.html'">
-                <img src="./Pictures/PointPleasantBeach.jpg" alt="Point Pleasant Beach Racing">
-                <div class="cardBody">
-                    <h3>Point Pleasant Beach</h3>
-                    <br>
-                    <h4>2021 Sarasota Powerboat Grand Prix</h4>
-                </div>
-            </div>
-    
-            <div class="card" onclick="location.href='lakeOzark.html'">
-                <img src="./Pictures/LakeOzark.jpg" alt="Lake Ozark Racing">
-                <div class="cardBody">
-                    <h3>Lake Ozark</h3>
-                    <br>
-                    <h4>2021 Lake Ozark Race</h4>
-                </div>
-            </div>
-    
-            <div class="card" onclick="location.href='cocoaBeach.html'">
-                <img src="./Pictures/CocoaBeach.jpg" alt="Cocoa Beach Racing">
-                <div class="cardBody">
-                    <h3>Cocoa Beach</h3>
-                    <br>
-                    <h4>2021 Thunder on Cocoa Beach</h4>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="cardHolderWrapper">
-        <p class="cardHolderHashtag announcment">Announcment</p>
-
-        <div class="cardHolder">
-
-            <div class="card" onclick="location.href='announcment1.html'">
-                <img src="./Pictures/Announcment1.jpg" alt="Announcment of northeast championship Racing">
-                <div class="cardBody">
-                    <h3>2021 Northeast Championship Series</h3>
-                </div>
-            </div>
-
-            <div class="card" onclick="location.href='sarasotaAnnouncment.html'">
-                <img src="./Pictures/SarasotaAnnouncmentAndInformation.jpg" alt="Sarasota Powerboat Grand Prix Announcment Racing">
-                <div class="cardBody">
-                    <h3>Sarasota Powerboat Grand Prix Info</h3>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-    <div class="cardHolderWrapper">
-        <p class="cardHolderHashtag live">Live Podcasts</p>
-
-        <div class="cardHolder">
-
-            <div class="card" onclick="location.href='podcasts.html'">
-                <img src="./Pictures/Podcats113.jpg" alt="Podcast #113">
-                <div class="cardBody">
-                    <h3>Episode #113</h3>
-                    <br>
-                    <h4>w/ Lindsay Pirie & Steve Schoderer</h4>
-                </div>
-            </div>
-
-            <div class="card" onclick="location.href='podcasts.html'">
-                <img src="./Pictures/podcast112.jpg" alt="Podcast #112">
-                <div class="cardBody">
-                    <h3>Episode #112</h3>
-                    <br>
-                    <h4>w/ Billy Martin & Charlie McCarthy</h4>
-                </div>
-            </div>
-
-            <div class="card" onclick="location.href='podcasts.html'">
-                <img src="./Pictures/podcast111.jpg" alt="Podcast #111">
-                <div class="cardBody">
-                    <h3>Episode #111</h3>
-                    <br>
-                    <h4>w/ Tim Sharkey</h4>
-                </div>
-            </div>
-
-            <div class="card" onclick="location.href='podcasts.html'">
-                <img src="./Pictures/podcast110.jpg" alt="Podcast #110">
-                <div class="cardBody">
-                    <h3>Episode #110</h3>
-                    <br>
-                    <h4>w/ Johnny Stanch & Smitty</h4>
-                </div>
-            </div>
-
-            <div class="card" onclick="location.href='podcasts.html'">
-                <img src="./Pictures/podcast109.jpg" alt="Podcast #109">
-                <div class="cardBody">
-                    <h3>Episode #109</h3>
-                    <br>
-                    <h4>w/ Christian DelCollo - Battle Wagon Boats</h4>
-                </div>
-            </div>
-
-            <div class="card" onclick="location.href='podcasts.html'">
-                <img src="./Pictures/podcast108.jpg" alt="Podcast #108">
-                <div class="cardBody">
-                    <h3>Episode #108</h3>
-                    <br>
-                    <h4>w/ Joe Wnek - Hurricane Force</h4>
-                </div>
-            </div>
-
-            <div class="card" onclick="location.href='podcasts.html'">
-                <img src="./Pictures/podcast107.jpg" alt="Podcast #107">
-                <div class="cardBody">
-                    <h3>Episode #107</h3>
-                    <br>
-                    <h4>w/ Steve Adams (Part 2) - Jersey Outlaw & Ammo Camo</h4>
-                </div>
-            </div>
-
-            <div class="card" onclick="location.href='podcasts.html'">
-                <img src="./Pictures/podcast106.jpg" alt="Podcast #106">
-                <div class="cardBody">
-                    <h3>Episode #106</h3>
-                    <br>
-                    <h4>w/ Steve Adams (Part 1) - Jersey Outlaw & Ammo Camo</h4>
-                </div>
-            </div>  
-
-        </div>
         
+        <div data-include="carousel" style="width: 100vw;"></div>
+
+        <div class="cardHolderWrapper">
+            <p class="cardHolderHashtag results">Results</p>
+
+            <div class="cardHolder">
+                <div class="card" onclick="location.href='michiganCity.html'">
+                    <img src="./Pictures/MichiganCity.jpg" alt="Michigan City Racing">
+                    <div class="hashtagContainer">
+                        <p class="hashtag new">New!</p>
+                    </div>
+                    <div class="cardBody">
+                        <h3>Michigan City</h3>
+                        <br>
+                        <h4>2021 Great Lakes Grand Prix</h4>
+                    </div>
+                </div>
+
+                <div class="card" onclick="location.href='stClair.html'">
+                    <img src="./Pictures/StClair.jpg" alt="St Clair Racing">
+                    <div class="cardBody">
+                        <h3>St Clair</h3>
+                        <br>
+                        <h4>2021 St Clair River Classic</h4>
+                    </div>
+                </div>
+
+                <div class="card" onclick="location.href='eastlake.html'">
+                    <img src="./Pictures/Eastlake.jpg" alt="Eastlake Racing">
+                    <div class="cardBody">
+                        <h3>Eastlake</h3>
+                        <br>
+                        <h4>2021 Great Lakes Grand Prix</h4>
+                    </div>
+                </div>
+
+                <div class="card" onclick="location.href='sarasota.html'">
+                    <img src="./Pictures/Sarasota.jpg" alt="Sarasota Racing">
+                    <div class="cardBody">
+                        <h3>Sarasota</h3>
+                        <br>
+                        <h4>2021 Sarasota Powerboat Grand Prix</h4>
+                    </div>
+                </div>
+
+                <div class="card" onclick="location.href='pointPleasantBeach.html'">
+                    <img src="./Pictures/PointPleasantBeach.jpg" alt="Point Pleasant Beach Racing">
+                    <div class="cardBody">
+                        <h3>Point Pleasant Beach</h3>
+                        <br>
+                        <h4>2021 Sarasota Powerboat Grand Prix</h4>
+                    </div>
+                </div>
+        
+                <div class="card" onclick="location.href='lakeOzark.html'">
+                    <img src="./Pictures/LakeOzark.jpg" alt="Lake Ozark Racing">
+                    <div class="cardBody">
+                        <h3>Lake Ozark</h3>
+                        <br>
+                        <h4>2021 Lake Ozark Race</h4>
+                    </div>
+                </div>
+        
+                <div class="card" onclick="location.href='cocoaBeach.html'">
+                    <img src="./Pictures/CocoaBeach.jpg" alt="Cocoa Beach Racing">
+                    <div class="cardBody">
+                        <h3>Cocoa Beach</h3>
+                        <br>
+                        <h4>2021 Thunder on Cocoa Beach</h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="cardHolderWrapper">
+            <p class="cardHolderHashtag announcment">Announcment</p>
+
+            <div class="cardHolder">
+
+                <div class="card" onclick="location.href='announcment1.html'">
+                    <img src="./Pictures/Announcment1.jpg" alt="Announcment of northeast championship Racing">
+                    <div class="cardBody">
+                        <h3>2021 Northeast Championship Series</h3>
+                    </div>
+                </div>
+
+                <div class="card" onclick="location.href='sarasotaAnnouncment.html'">
+                    <img src="./Pictures/SarasotaAnnouncmentAndInformation.jpg" alt="Sarasota Powerboat Grand Prix Announcment Racing">
+                    <div class="cardBody">
+                        <h3>Sarasota Powerboat Grand Prix Info</h3>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="cardHolderWrapper">
+            <p class="cardHolderHashtag live">Live Podcasts</p>
+
+            <div class="cardHolder">
+
+                <div class="card" onclick="location.href='live.html'">
+                    <img src="./Pictures/Podcats113.jpg" alt="Podcast #113">
+                    <div class="cardBody">
+                        <h3>Episode #113</h3>
+                        <br>
+                        <h4>w/ Lindsay Pirie & Steve Schoderer</h4>
+                    </div>
+                </div>
+
+                <div class="card" onclick="location.href='live.html'">
+                    <img src="./Pictures/podcast112.jpg" alt="Podcast #112">
+                    <div class="cardBody">
+                        <h3>Episode #112</h3>
+                        <br>
+                        <h4>w/ Billy Martin & Charlie McCarthy</h4>
+                    </div>
+                </div>
+
+                <div class="card" onclick="location.href='live.html'">
+                    <img src="./Pictures/podcast111.jpg" alt="Podcast #111">
+                    <div class="cardBody">
+                        <h3>Episode #111</h3>
+                        <br>
+                        <h4>w/ Tim Sharkey</h4>
+                    </div>
+                </div>
+
+                <div class="card" onclick="location.href='live.html'">
+                    <img src="./Pictures/podcast110.jpg" alt="Podcast #110">
+                    <div class="cardBody">
+                        <h3>Episode #110</h3>
+                        <br>
+                        <h4>w/ Johnny Stanch & Smitty</h4>
+                    </div>
+                </div>
+
+                <div class="card" onclick="location.href='live.html'">
+                    <img src="./Pictures/podcast109.jpg" alt="Podcast #109">
+                    <div class="cardBody">
+                        <h3>Episode #109</h3>
+                        <br>
+                        <h4>w/ Christian DelCollo - Battle Wagon Boats</h4>
+                    </div>
+                </div>
+
+                <div class="card" onclick="location.href='live.html'">
+                    <img src="./Pictures/podcast108.jpg" alt="Podcast #108">
+                    <div class="cardBody">
+                        <h3>Episode #108</h3>
+                        <br>
+                        <h4>w/ Joe Wnek - Hurricane Force</h4>
+                    </div>
+                </div>
+
+                <div class="card" onclick="location.href='live.html'">
+                    <img src="./Pictures/podcast107.jpg" alt="Podcast #107">
+                    <div class="cardBody">
+                        <h3>Episode #107</h3>
+                        <br>
+                        <h4>w/ Steve Adams (Part 2) - Jersey Outlaw & Ammo Camo</h4>
+                    </div>
+                </div>
+
+                <div class="card" onclick="location.href='live.html'">
+                    <img src="./Pictures/podcast106.jpg" alt="Podcast #106">
+                    <div class="cardBody">
+                        <h3>Episode #106</h3>
+                        <br>
+                        <h4>w/ Steve Adams (Part 1) - Jersey Outlaw & Ammo Camo</h4>
+                    </div>
+                </div>  
+
+            </div>
+            
+        </div>
     </div>
     
     <!-- Footer for links to old site and socials -->

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="./CSS/main.CSS">
+    <script defer src="./JS/main.js"></script>
+</head>
+<body>
+
+    <div id="container">
+
+        <div id="fuelConsumption">
+            <form>
+                <p>Km: <input type="text" id="km"></p>
+                <p>Pris/liter: <input type="text" id="euro"></p>
+                <p>Liter/100km: <input type="text" onChange="calc()" id="consumo"></p>
+                <input type="button" onClick="calc()" value="Calculate">
+            </form>
+        
+            <div id="fuelResult">
+        
+            </div>
+        </div>
+        
+        <div id="meterToSqF">
+            <form>
+                <p>Kvadratmeter: <input type="text" id="kvadratMeter" onChange="kvadratmeterToSqF()"></p>
+                <p>Square Feet: <input type="text" id="sqF" onChange="kvadratmeterToSqF('invert')"></p>
+            </form>
+        </div>
+        
+        <div id="euroToSek">
+            <form>
+                <p>Euro: <input type="text" id="euroToSekEuro" onChange="euroToSek()"></p>
+                <p>Kr: <input type="text" id="kr" onChange="euroToSek('invert')"></p>
+                
+                <div id="sekResult">
+                    
+                </div>
+            </form>
+        </div>
+        
+        <div id="cToF">
+            <form>
+                <p>C: <input type="text" id="c" onChange="convertToF()"></p>
+                <input type="button" onClick="convertToF()" value="Calculate">
+    
+                <div id="fahrenheitResult">
+    
+                </div>
+            </form>
+        </div>
+
+    </div>
+    
+</body>
+</html>

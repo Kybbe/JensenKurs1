@@ -1,4 +1,8 @@
 <footer style="background-color: var(--inverted-text-color);">
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/sv_SE/sdk.js#xfbml=1&version=v12.0" nonce="3c8aN8eC"></script>
+
     <ol style="width: 100%;">
         <li><a href="#top">Back to the Top</a></li>
         <li>|</li>
@@ -16,6 +20,13 @@
         <li>|</li>
         <li><a href="./contact.html">Contact</a></li>
     </ol>
+    <div class="fb-share-button" data-href="https://OpaRacing.org" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2FOpaRacing.org%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Dela</a></div>
+    <p style="color: red; font-size: large;">
+        This is a school project and not the legitimate OPA Racing site! <br>
+        I don't in any way own the photos or content hosted on this site. <br>
+        <a href="https://Oparacing.org">OpaRacing.org</a> is the real site! <br>
+        Please go over there and show them some love.
+    </p>
     <p>
         OPAracing.org is the official web site for OPA Racing, LLC. OPA Racing LLC, is also referred to as the Offshore Powerboat Association. The OPA logos and marks depicted herein are the property of OPA Racing LLC and may not be reproduced without the prior written consent of OPA Racing, LLC. All Rights Reserved. Any other third party trademarks or copyrights are property of their respective owners. All rights reserved.
     </p>
@@ -25,6 +36,7 @@
     <p>
         Copyright © 2021. All Rights Reserved.
     </p>
+    
     <ul style="width: 100%;">
         <li><a href="http://www.oparacing.org/privacy_policy">Privacy Policy</a></li>
         <li><a href="http://www.oparacing.org/seugneriygoerg">Terms of use</a></li>
@@ -73,6 +85,11 @@
 
     footer ol > li:nth-child(even) {
         display: none;
+    }
+
+    footer .fb-share-button {
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     @media (min-width: 550px) {

@@ -1,0 +1,132 @@
+<head>
+    <!-- Bootstrap CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./CSS/bootstrapCarousel.CSS">
+</head>
+
+<div id="carousel" class="carousel slide" data-bs-ride="carousel">
+
+    <div id="headline">
+        <h1>Offshore Powerboat Association</h1>
+    </div>
+
+    <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="./Pictures/CarouselPicture.jpg" alt="Picture of boat">
+        <div class="carousel-caption">
+            <h2>2018 Fountain APBA Kilo Speed run</h2>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <img src="./Pictures/CarouselPicture2.jpg" alt="Picture of boat">
+        <div class="carousel-caption">
+            <h2>2017 Fall river grand prix</h2>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <video autoplay loop muted>
+            <source src="./Pictures/videoRace.mp4" type="video/mp4" />
+        </video>
+        <div class="carousel-caption">
+            <h2>Team 27 Port Huron race</h2>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <img src="./Pictures/CarouselPicture3.jpg" alt="Picture of boat">
+        <div class="carousel-caption">
+            <h2>2017 Englewood</h2>
+            <p>Race in class Vee Extreme</p>
+        </div>
+    </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fas fa-chevron-left"></i></span>
+    <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"><i class="fas fa-chevron-right"></i></span>
+    <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<style>
+#headline {
+    position: absolute;
+    z-index: 2;
+    font-size: 2vw;
+    transition: font-size 1s ease;
+
+    color: white;
+    margin: 20px;
+}
+
+#headline h1 {
+    margin: 0;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: bold;
+
+    backdrop-filter: blur(2px);
+}
+
+#carousel {
+    width: 100%;
+    max-height: 80vh;
+    box-shadow: var(--shadow);
+
+    position: relative;
+    z-index: 0;
+
+    margin-bottom: -50px;
+}
+
+#carousel img, #carousel video {
+    width: 100%;
+    height: 45vh;
+    display: block;
+    filter: brightness(0.7);
+
+    transition: height 1s ease;
+}
+
+video {
+    object-fit: fill;
+}
+
+.carousel-indicators {
+    bottom: 40px !important;
+}
+
+.carousel-caption {
+    bottom: 50px;
+    left: 50%;
+    right: unset;
+    padding: 0 !important;
+    text-align: unset;
+    color: white;
+    font-size: 3vw;
+    transform: translateX(-50%);
+    transition: font-size 1s ease;
+}
+
+.carousel-caption > * {
+    backdrop-filter: blur(1px);
+}
+
+@media (min-width: 750px) {
+    #carousel img, #carousel video {
+        height: 70vh;
+    }
+}
+
+@media (min-width: 1000px) {
+    #headline, .carousel-caption {
+        font-size: 1.5vw;
+    }
+}
+</style>
