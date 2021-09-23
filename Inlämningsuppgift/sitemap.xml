@@ -7,13 +7,31 @@
 		<lastmod>2021-09-23</lastmod>
 	</url>
 	<url>
-		<loc>https://www.OpaRacing.org/standings.html</loc>
+		<loc>https://www.OpaRacing.org/announcment1.html</loc>
 		<priority>0.67</priority>
 		<changefreq>daily</changefreq>
 		<lastmod>2021-09-19</lastmod>
 	</url>
 	<url>
-		<loc>https://www.OpaRacing.org/schedule.html</loc>
+		<loc>https://www.OpaRacing.org/contact.html</loc>
+		<priority>0.67</priority>
+		<changefreq>daily</changefreq>
+		<lastmod>2021-09-23</lastmod>
+	</url>
+	<url>
+		<loc>https://www.OpaRacing.org/gallery.html</loc>
+		<priority>0.67</priority>
+		<changefreq>daily</changefreq>
+		<lastmod>2021-09-23</lastmod>
+	</url>
+	<url>
+		<loc>https://www.OpaRacing.org/live.html</loc>
+		<priority>0.67</priority>
+		<changefreq>daily</changefreq>
+		<lastmod>2021-09-23</lastmod>
+	</url>
+	<url>
+		<loc>https://www.OpaRacing.org/michiganCity.html</loc>
 		<priority>0.67</priority>
 		<changefreq>daily</changefreq>
 		<lastmod>2021-09-19</lastmod>
@@ -25,38 +43,27 @@
 		<lastmod>2021-09-22</lastmod>
 	</url>
 	<url>
-		<loc>https://www.OpaRacing.org/michiganCity.html</loc>
+		<loc>https://www.OpaRacing.org/schedule.html</loc>
 		<priority>0.67</priority>
 		<changefreq>daily</changefreq>
 		<lastmod>2021-09-19</lastmod>
 	</url>
 	<url>
-		<loc>https://www.OpaRacing.org/live.html</loc>
+		<loc>https://www.OpaRacing.org/standings.html</loc>
 		<priority>0.67</priority>
 		<changefreq>daily</changefreq>
-		<lastmod>2021-09-22</lastmod>
+		<lastmod>2021-09-19</lastmod>
 	</url>
 	<url>
-		<loc>https://www.OpaRacing.org/gallery.html</loc>
-		<priority>0.67</priority>
+		<loc>https://www.OpaRacing.org/dependencies/footer.html</loc>
+		<priority>0.33</priority>
 		<changefreq>daily</changefreq>
 		<lastmod>2021-09-23</lastmod>
 	</url>
 	<url>
-		<loc>https://www.OpaRacing.org/contact.html</loc>
-		<priority>0.67</priority>
-		<changefreq>daily</changefreq>
-		<lastmod>2021-09-22</lastmod>
-	</url>
-	<url>
-		<loc>https://www.OpaRacing.org/announcment1.html</loc>
-		<priority>0.67</priority>
-		<changefreq>daily</changefreq>
-		<lastmod>2021-09-19</lastmod>
-	</url>
-	<url>
-		<loc>https://www.OpaRacing.org/dependencies/carousel.html</loc>
+		<loc>https://www.OpaRacing.org/dependencies/navbar.html</loc>
 		<priority>0.33</priority>
+		<changefreq>daily</changefreq>
 		<lastmod>2021-09-23</lastmod>
 	</url>
 	<url>
@@ -66,15 +73,8 @@
 		<lastmod>2021-09-15</lastmod>
 	</url>
 	<url>
-		<loc>https://www.OpaRacing.org/dependencies/navbar.html</loc>
+		<loc>https://www.OpaRacing.org/dependencies/carousel.html</loc>
 		<priority>0.33</priority>
-		<changefreq>daily</changefreq>
-		<lastmod>2021-09-23</lastmod>
-	</url>
-	<url>
-		<loc>https://www.OpaRacing.org/dependencies/footer.html</loc>
-		<priority>0.33</priority>
-		<changefreq>daily</changefreq>
 		<lastmod>2021-09-23</lastmod>
 	</url>
 </urlset>

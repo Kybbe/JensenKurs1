@@ -54,3 +54,32 @@ function openNavbar() {
         $("#navbar").addClass("openedNavbar");
     }
 }
+
+function submitResult() {
+    var form = document.getElementById("contactForm");
+    var inputs = form.getElementsByTagName("input");
+    var resultDiv = document.getElementById("result")
+    var result = "";
+    var allValid = true;
+
+    for(inputThingy of inputs) { // get all inputs
+        result += inputThingy.id + ": " + inputThingy.value + " \r\n"; //set result as a alert friendly formed list
+        if(!inputThingy.checkValidity()) {
+            allValid = false;
+        }
+    }
+
+    if(allValid == true) {
+        if (window.confirm(result + " \r\n" + "Click 'ok' if all info above looks right.")) {// visar alla inputs och frågar användaren om dom vill se svaret på hemsidan också
+            resultDiv.innerHTML = "Form sent successfully!"; // skriv ut svaret i div "result"
+            resultDiv.style.color = "green";
+        };
+    } else {
+        resultDiv.innerHTML = "Form not fully filled out or valid.";
+        resultDiv.style.color = "red";
+    }
+
+    
+    
+}
+
