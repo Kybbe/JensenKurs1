@@ -20,10 +20,102 @@
     <div data-include="navbar"></div>
 
     <div data-include="carousel" style="margin-bottom: 50px;"></div>
-
+    
     <h1 style="text-align: center;">Gallery of photos</h1>
 
-    <p style="text-align: center;">And such....</p>
+    <h1 style="text-align: center;">INTE KLAR</h1>
+
+    <h2 style="text-align: center;"> Planen här var att klicka på korten, få upp en grå fullscreen ruta med alla bilder i grid-style.</h2>
+    
+    <div id="gallery2018">
+
+        <div class="galleryCard" style="width: 100%; cursor: unset">
+            <div class="cardInside" style="justify-content: center;">
+                <h2>2018</h2>
+            </div>
+        </div>
+
+        <div class="galleryCard" style="background-image: url(./Pictures/CarouselPicture.jpg);">
+            <div class="cardInside">
+                <h3>Fountain Kilo</h3>
+            </div>
+        </div>
+
+        <div class="galleryCard" style="background-image: url(./Pictures/CarouselPicture.jpg);">
+            <div class="cardInside">
+                <h3>Point Pleasant Grand Prix</h3>
+            </div>
+        </div>
+
+        <div class="galleryCard" style="background-image: url(./Pictures/CarouselPicture.jpg);">
+            <div class="cardInside">
+                <h3>Lake Race</h3>
+            </div>
+        </div>
+
+        <!-- <div class="galleryimgs">
+            <img src="./Pictures/CarouselPicture.jpg" alt="">
+        </div>
+
+        <h3>Point Pleasant Grand Prix</h3>
+
+        <div class="galleryimgs">
+            <img src="./Pictures/CarouselPicture.jpg" alt="">
+        </div> -->
+
+    </div>
+
+    <style>
+        #gallery2018 {
+            width: 92%;
+            margin: 10px auto;
+            border-radius: 10px;
+            background-color: var(--card-color);
+            text-align: center;
+            padding: 10px;
+            
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        
+        .galleryCard {
+            width: 49%;
+            margin-bottom: 10px;
+            cursor: pointer;
+            border-radius: 10px;
+            background-color: var(--card-color);
+            text-align: center;
+            box-shadow: var(--shadow);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100px;
+        }
+        
+        .cardInside {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            backdrop-filter: blur(1px);
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.3);
+            height: calc(100% - 20px);
+        }
+
+        .cardInside h3 {
+            margin: 0px;
+            width: calc(100% - 20px);
+            word-wrap: break-word;
+        }
+        
+        #gallery2018 img {
+            width: 18%;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+    </style>
+
 
 
     <div data-include="footer"></div>

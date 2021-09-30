@@ -76,7 +76,6 @@
 html, body {
     margin: 0;
     padding: 0;
-    width: 100vw;
     scroll-behavior: smooth;
 }
 
@@ -127,7 +126,7 @@ body {
 
 .cardHolder .card:last-child{
     margin-right: 45px; 
-  }
+}
 
 .card {
     background-color: var(--card-color);
